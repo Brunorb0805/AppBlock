@@ -1,0 +1,39 @@
+<resources>
+    <!-- Valores de Tema do app -->
+    <string-array name="settings_theme_entries">
+        <item>Automático(sistema)</item>
+        <item>Claro</item>
+        <item>Escuro</item>
+    </string-array>
+
+    <string-array name="settings_theme_values">
+        <item>-1</item><!--AppCompatDelegate.MODE_NIGHT_AUTO_TIME-->
+        <item>1</item><!--AppCompatDelegate.MODE_NIGHT_NO-->
+        <item>2</item><!--AppCompatDelegate.MODE_NIGHT_YES-->
+    </string-array>
+    <string name="settings_theme_default_values">-1</string>
+
+
+    <!-- Valores do tempo de espera para travar apps bloqueados  -->
+    <string-array name="settings_block_time_entries">
+        <item>Imediatamente</item>
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>1 minuto</item>
+        <item>3 minutos</item>
+        <item>5 minutos</item>
+        <item>10 minutos</item>
+    </string-array>
+
+    <string-array name="settings_block_time_values">
+        <item>0</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>180000</item>
+        <item>300000</item>
+        <item>600000</item>
+    </string-array>
+    <string name="settings_block_time_default_values">0</string>
+
+</resources>

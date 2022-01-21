@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_apps"
+        android:title="@string/menu_apps" />
+    <item
+        android:id="@+id/settingFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/menu_settings" />
+
+
+    <item android:title="@string/menu_title_data">
+        <menu>
+            <item
+                android:id="@+id/navSync"
+                android:icon="@drawable/ic_server_sync"
+                android:title="@string/menu_sync" />
+            <item
+                android:id="@+id/navClearCache"
+                android:icon="@drawable/ic_clear_cache"
+                android:title="@string/menu_clear_cache" />
+        </menu>
+    </item>
+
+
+    <item android:title="@string/menu_title_session">
+        <menu>
+            <item
+                android:id="@+id/navExit"
+                android:icon="@drawable/ic_exit"
+                android:title="@string/menu_exit" />
+        </menu>
+    </item>
+
+</menu>

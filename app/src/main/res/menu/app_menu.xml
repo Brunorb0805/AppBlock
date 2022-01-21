@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- fragmentSettings é o id do fragmento no nav graph-->
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_filter"
+        android:orderInCategory="100"
+        android:title="@string/action_filter_apps"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="apps" />
+    <version value="1" />
+    <list>
+        <mapping class="br.com.gps.gpshub.model.DeviceAppDataSupport" />
+        <mapping class="br.com.gps.gpshub.model.FavAppDataSupport" />
+    </list>
+
+    <storage value="external" />
+
+</litepal>

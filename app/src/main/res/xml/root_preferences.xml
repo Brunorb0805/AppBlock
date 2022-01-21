@@ -1,0 +1,59 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/title_interface_settings">
+
+        <ListPreference
+            app:defaultValue="@string/settings_theme_default_values"
+            app:entries="@array/settings_theme_entries"
+            app:entryValues="@array/settings_theme_values"
+            app:icon="@drawable/ic_day_night"
+            app:key="@string/id_theme"
+            app:title="@string/title_day_night_mode"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/title_lock_settings">
+
+        <SwitchPreferenceCompat
+            app:enabled="true"
+            app:icon="@drawable/ic_app_lock"
+            app:key="@string/id_lock"
+            app:summaryOff="@string/subtitle_inactive_mode"
+            app:summaryOn="@string/subtitle_active_mode"
+            app:title="@string/title_lock_app_settings" />
+
+        <SwitchPreferenceCompat
+            app:dependency="@string/id_lock"
+            app:enabled="true"
+            app:icon="@drawable/ic_app_blocking"
+            app:key="@string/id_block_with_screen"
+            app:summaryOff="@string/subtitle_inactive_mode"
+            app:summaryOn="@string/subtitle_active_mode"
+            app:title="@string/title_block_app_when_lock_phone_settings" />
+
+        <ListPreference
+            app:defaultValue="@string/settings_block_time_default_values"
+            app:dependency="@string/id_lock"
+            app:entries="@array/settings_block_time_entries"
+            app:entryValues="@array/settings_block_time_values"
+            app:icon="@drawable/ic_timer"
+            app:key="@string/id_block_time_value"
+            app:title="@string/title_time_to_block_settings"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <!--    <PreferenceCategory app:title="@string/messages_header">-->
+
+    <!--        &lt;!&ndash; video: como criar icones que não perdem resolução &ndash;&gt;-->
+    <!--        <EditTextPreference-->
+    <!--            app:key="signature"-->
+    <!--            app:icon="@drawable/ic_login"-->
+    <!--            app:title="@string/signature_title"-->
+    <!--            app:defaultValue="Não Definida"-->
+    <!--            app:useSimpleSummaryProvider="true" />-->
+
+    <!--    </PreferenceCategory>-->
+
+</PreferenceScreen>
